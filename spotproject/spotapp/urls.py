@@ -4,6 +4,6 @@ from . import views
 app_name= "spotapp"
 
 urlpatterns = [
-    # これはトップ画面に遷移するpath
-    path('', views.index, name="index"),
+    # これは管理者（職員）のトップ画面に遷移するpath
+    path('', views.index, name="home"),
 ]

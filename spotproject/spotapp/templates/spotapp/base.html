@@ -6,51 +6,20 @@
 </head>
 
 <body>
-<header>
-  <!-- 上部ボタン -->
-  <div>
-    <button>ホームボタン</button>
-    <button>地区別</button>
-    <button>カテゴリ</button>
-    <button>お知らせ / 通知</button>
-    <button>新規登録 / ログイン</button>
-  </div>
-</header>
+  <header>
+    <a href="{%url%}">
+  </header> 
 
+  <main> 
+    {% block main %}{% endblock %}
+  </main>
 
-  <!-- 検索バー -->
-  <div>
-    <input type="text" placeholder="検索バー（あいまい検索可能）">
-  </div>
-
-  <br>
-
-  <!-- 写真（左右ボタン付き） -->
-  <div>
-    <button>◀</button>
-
-    <!-- アップロード画像の表示 -->
-    <img src="/mnt/data/3b2419b3-f5bf-467d-b466-70b4314dab24.png" alt="写真" width="300">
-
-    <button>▶</button>
-  </div>
-
-  <br>
-
-  <!-- イベント枠 -->
-  <div>
-    <p>イベント</p>
-  </div>
-
-  <hr>
-
-
-<footer>
+  <footer>
   <!-- 下部フッター -->
-  <div>
-    <span>E班</span>
-    <button>お問い合わせ</button>
-  </div>
- </footer>
+    <div>
+      <span>E班</span>
+      <button>お問い合わせ</button>
+    </div>
+  </footer>
 </body>
 </html>
